@@ -1,0 +1,80 @@
+.quienes-somos {
+  background-color: #101d28;
+  color: #ffffff;
+  padding: 80px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.quienes-somos .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.image-box {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.text-box {
+  flex: 1 1 500px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  border-left: 6px solid #00aeef;
+  padding-left: 16px;
+}
+
+.heading .white {
+  color: #ffffff;
+}
+
+.heading .blue {
+  color: #00aeef;
+}
+
+.intro,
+.details {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+.brand-name {
+  font-weight: 700;
+  color: #ffffff; /* resalta con blanco puro */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .image-box,
+  .text-box {
+    max-width: 100%;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+}

@@ -1,17 +1,85 @@
-header{
-    background-color: black;
-    padding: 20px;
+.hero-header {
+  background-color: #07141d;
+  padding: 0.1rem 5rem;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    padding: 10px 20px;
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-nav a:hover {
-    background-color: white;
-    color: black;
-    border-radius: 15px;
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
+}
+
+/* LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00d4ff;
+}
+
+/* BOTONES CTA */
+.cta-buttons {
+  display: flex;
+  align-items: center;
+}
+
+/* === BOTÓN PRINCIPAL (mismo del hero) === */
+.btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #006EFF, #00A3FF);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 3px 10px rgba(0, 163, 255, 0.3);
+}
+
+.btn.primary:hover {
+  background: linear-gradient(135deg, #00A3FF, #006EFF);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 163, 255, 0.4);
+}
+
+.btn.primary i {
+  font-size: 1.1rem;
+  color: #ffffff; /* color verde oficial WhatsApp */
 }

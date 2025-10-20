@@ -1,2 +1,38 @@
-<h1>TU SITIO WEB PARA VENDER Y CONECTAR</h1>
-<img src="/img/1.jpg" alt="inicio">
+<section class="hero">
+  <div class="hero-content">
+    <h1>
+      TU SITIO WEB PARA <br />
+      <span>VENDER Y CONECTAR</span>
+    </h1>
+    <p>
+      Brindamos servicios de diseño web estratégico, desarrollo de landing pages,
+      tiendas online y posicionamiento SEO para marcas digitales.
+    </p>
+
+    <div class="hero-buttons">
+      <a routerLink="/contacto" class="btn primary">
+        <i class="fa-brands fa-whatsapp"></i> Contáctanos
+      </a>
+      <a routerLink="/servicios" class="btn secondary">Nuestros servicios</a>
+    </div>
+
+    <div class="service-tags">
+      <span>One Page</span>
+      <span>Ecommerce</span>
+      <span>Portafolio</span>
+      <span>SEO</span>
+    </div>
+  </div>
+
+  <div class="hero-images">
+    <img src="/img/hero1.png" alt="" class="circle-main" />
+    <img src="/img/hero2.png" alt="" class="circle-top" />
+    <img src="/img/hero3.png" alt="" class="circle-bottom" />
+  </div>
+</section>
+
+<!-- 👇 Sección de Servicios -->
+<app-servicios-section></app-servicios-section>
+
+<!-- 👇 Sección Quiénes Somos -->
+<app-quienesomos-section></app-quienesomos-section>

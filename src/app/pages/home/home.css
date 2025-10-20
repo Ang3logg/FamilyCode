@@ -1,5 +1,170 @@
-h1{
+.hero {
+  background: radial-gradient(circle at 80% 50%, #0A2A3E 0%, #07141D 60%);
+  color: #ffffff;
+  padding: 5rem 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ---- Contenido ---- */
+.hero-content {
+  flex: 1 1 50%;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero h1 span {
+  color: #00A3FF;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #d0d8e0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #006EFF, #00A3FF);
+  color: #ffffff;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  border: 2px solid #00A3FF;
+  color: #00A3FF;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #00A3FF, #006EFF);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.service-tags span {
+  background-color: #0E1F2A;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #00A3FF;
+}
+
+.hero-images {
+  flex: 1 1 40%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🟦 Círculo principal */
+.hero-images .circle-main {
+  width: 391px;
+  height: 391px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00A3FF;
+  z-index: 2;
+  box-shadow: 0 0 25px rgba(0, 163, 255, 0.25);
+}
+
+/* 🟨 Círculo pequeño arriba */
+.hero-images .circle-top {
+  position: absolute;
+  top: -70px; /* antes -40px → más espacio */
+  right: 1px; /* antes 40px → más aire */
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00A3FF;
+  box-shadow: 0 0 15px rgba(0, 163, 255, 0.25);
+}
+
+/* 🟩 Círculo pequeño abajo */
+.hero-images .circle-bottom {
+  position: absolute;
+  bottom: -70px; /* antes -40px → más aire */
+  right: 1px; /* antes 30px → un poco más lejos */
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00A3FF;
+  box-shadow: 0 0 15px rgba(0, 163, 255, 0.25);
+}
+
+/* 🟧 Ícono dentro del botón WhatsApp */
+.btn i {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* Hover del botón principal */
+.btn.primary:hover {
+  background: linear-gradient(135deg, #00A3FF, #006EFF);
+  transform: translateY(-2px);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    padding: 3rem 2rem;
     text-align: center;
-    font-size: 40px;
-    letter-spacing: 10px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-images {
+    margin-top: 2.5rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-images .circle-main {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero-images .circle-top,
+  .hero-images .circle-bottom {
+    width: 80px;
+    height: 80px;
+  }
 }

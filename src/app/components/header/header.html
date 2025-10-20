@@ -1,9 +1,23 @@
-<header>
-    <nav>
-        <a routerLink="/">Inicio</a>
-        <a routerLink="/servicios">Servicios</a>
-        <a routerLink="/portafolio">Portafolio</a>
-        <a routerLink="/blog">Blog</a>
-        <a routerLink="/contacto">Contacto</a>
-    </nav>
+<header class="hero-header">
+  <nav class="navbar">
+    <div class="logo">
+      <a routerLink="/">
+        <img src="/img/Logo.png" alt="" class="logo-img" />
+      </a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a routerLink="/">Inicio</a></li>
+      <li><a routerLink="/servicios">Servicios</a></li>
+      <li><a routerLink="/portafolio">Portafolio</a></li>
+      <li><a routerLink="/blog">Blog</a></li>
+      <li><a routerLink="/contacto">Contacto</a></li>
+    </ul>
+
+    <div class="cta-buttons">
+      <a routerLink="/contacto" class="btn primary">
+        <i class="fa-brands fa-whatsapp"></i> Contáctanos
+      </a>
+    </div>
+  </nav>
 </header>
